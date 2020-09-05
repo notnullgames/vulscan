@@ -14,6 +14,8 @@ Vulscan is a module which enhances nmap to a vulnerability scanner. The nmap opt
 
 ## Installation
 
+### nmap
+
 Please install the files into the following folder of your Nmap installation:
 
     Nmap\scripts\vulscan\*
@@ -22,6 +24,10 @@ Clone the GitHub repository like this:
 
     git clone https://github.com/scipag/vulscan scipag_vulscan
     ln -s `pwd`/scipag_vulscan /usr/share/nmap/scripts/vulscan    
+
+### love
+
+Copy `vulnscan.lua` and `*.csv` into your project, and look at main.lua for usage example.
 
 ## Usage
 
