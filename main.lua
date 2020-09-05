@@ -44,5 +44,9 @@ function love:load()
 end
 
 function love:draw()
-	love.graphics.print("See console for output", (love.graphics.getWidth()/2) - 50, (love.graphics.getHeight()/2) - 5)
+	local message = "Please wait while I get vulnerabilities."
+	if (#results) then
+		message = "See console for output."
+	end
+	love.graphics.printf( message, 0, (love.graphics.getHeight()/2) - 5, love.graphics.getWidth(), "center")
 end
