@@ -105,5 +105,5 @@ for i,v in pairs(dbs) do
 	dbs[i] = VS:read_from_file(v .. ".csv")
 	print(v)
 	print "--------------------------"
-	print_table(VS:find("Apache Tomcat/Coyote JSP engine", "1.1", dbs[i]))
+	print_table(VS:find(dbs[i], "Apache Tomcat/Coyote JSP engine"))
 end

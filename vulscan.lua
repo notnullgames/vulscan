@@ -1,7 +1,7 @@
 -- standalone lua version of vulnscamn (for use in luajit or love)
 
 -- USAGE
--- VS:find("Apache Tomcat/Coyote JSP engine", "1.1", "cve.csv")
+-- VS:find("cve.csv", "Apache Tomcat/Coyote JSP engine", "1.1")
 
 local function strsplit(sep, s)
     local fields = {}
@@ -40,7 +40,7 @@ end
 
 
 -- Find the product matches in the vulnerability databases
-function VS:find(prod, ver, db)
+function VS:find(db, prod, ver)
 	local v = {}			-- matching vulnerabilities
 	local v_id			-- id of vulnerability
 	local v_title			-- title of vulnerability
