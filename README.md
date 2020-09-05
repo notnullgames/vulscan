@@ -4,7 +4,7 @@
 <img src="./logo.png" width="300px">
 </p>
 
-THis fork allows the same database to be used in regular lua code (like in love or luajit.)
+This fork allows the same database to be used in regular lua code (like in love or luajit.) I wrapped the functions in `vulscan.lua`, and also provided an example luajit & love-usage in `test.lua` & `main.lua` (run with `love .`)
 
 ## Introduction
 
